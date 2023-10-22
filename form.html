@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body style="background-color:BurlyWood;">
 
 <h1>Запис до лікаря онлайн</h1>
 
 <p>В нижченаведених полях заповніть, будь ласка, ваші дані</p>
 
-<form action="/action_page.php">
+  <form action="/action_page.php">
   <label for="fname">Прізвище:</label>
   <input type="text" id="fname" name="fname"><br><br>
   
@@ -28,7 +28,15 @@
   <label for="lname">Введіть ваш номер телефону:</label>
   <input type="text" id="lname" name="lname"><br><br>
   
-
+  <form>
+  <label for="city">Оберіть місто:</label>
+  <select id="city" name="city">
+    <option value="city">Одеса</option>
+    <option value="city">Київ</option>
+    <option value="city" selected>Дніпро</option>
+    <option value="city">Львів</option>
+  </select>
+</form>
 
   
   <h4>Надаю згоду на обробку моїх персональних даних</h4>
@@ -36,8 +44,7 @@
 <input type="button" onclick="alert('Ваш запит надіслано')" value="Погоджуюсь!">
 <span style='font-size:100px;'>&#128076;</span>
 
-</form>
-
+</form> <br><br>
+<a href="https://alisasviridenko.github.io/html_5_/"> Go back to main page</b></a>
 </body>
 </html>
-
