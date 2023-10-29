@@ -1,1 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
 
+<style>
+#required { color: red;} 
+#pattern { text-align: center;
+           color: green;} 
+#city { background-color: yellow ;} 
+#label { fony-family: Impact ;} 
+</style>
+</head>
+<body>
+</body>
+</html> 
