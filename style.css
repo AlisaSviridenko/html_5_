@@ -1,7 +1,7 @@
 
 [required] {   border-style: solid;
               border-color: red;} 
-#pattern { text-align: center;
+[pattern] { text-align: center;
            color: green;} 
 #city {
   background-color: yellow ;} 
