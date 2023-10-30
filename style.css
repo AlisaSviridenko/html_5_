@@ -1,16 +1,8 @@
-<!DOCTYPE css>
-<html>
-<head>
-
-<style>
+body{
 #required {   border-style: solid;
               border-color: red;} 
 #pattern { text-align: center;
            color: green;} 
 #city { background-color: yellow ;} 
 #label { font-family: "Lucida Console", "Courier New", monospace;} 
-</style>
-</head>
-<body>
-</body>
-</html> 
+}
