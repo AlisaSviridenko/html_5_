@@ -4,4 +4,8 @@ body {
 h1 {
   color:Tomato;
 }
-
+p.ex1 {
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
