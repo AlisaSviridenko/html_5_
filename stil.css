@@ -17,6 +17,7 @@ ul {
 
 li {
   border-style: solid;
+  border-color: blue;
   background: #ffe5e5;
   color: darkred;
   padding: 5px;
