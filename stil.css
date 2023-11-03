@@ -14,3 +14,14 @@ p.ex2 {
   outline-style: outset;
   outline-color: green;
 }
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
