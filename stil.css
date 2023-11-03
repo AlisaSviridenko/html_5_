@@ -9,3 +9,8 @@ p.ex1 {
   outline-style: outset;
   outline-color: grey;
 }
+p.ex2 {
+  border: 3px solid black;
+  outline-style: outset;
+  outline-color: green;
+}
