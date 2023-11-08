@@ -52,7 +52,7 @@ div.sticky {
 div.description {
   background-color: grey;
   width: 1400px;
-  height: 200px;
+  height: 150px;
   border: 1px solid black;
   overflow: scroll;
 }
