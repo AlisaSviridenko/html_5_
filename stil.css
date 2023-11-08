@@ -64,3 +64,10 @@ div.sticky {
   background-color: gray;
   border: 2px solid #4CAF50;
 }
+div.description {
+  background-color: grey;
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  overflow: scroll;
+}
