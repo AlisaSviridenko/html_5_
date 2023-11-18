@@ -13,33 +13,33 @@
 
 <p>Welcome to the online calculator where you can check the results of your calculations</p>
 
-  <div class="container">
-  <label for="number1">Number 1</label>
-  <input type="number" id="Number1" name="Number1"></div><br><br>
+<div class="calculator-container">
+<div class="container">
+<label for="number1">Number 1</label>
+  <input type="number"  class="form-control" id="Number1" name="Number1"></div><br><br>
   
-  <div class="container">
-  <form action="/action_page.php">
-    <label for="sel1" class="form-label">Select action:</label>
-    <select class="form-select" id="sel1" name="sellist1">
-      <option>+</option>
-      <option>-</option>
-      <option>*</option>
-      <option>/</option>
+  <div class="col">
+<select class="form-select" id="action">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
     </select>
     <br>
     <br>
     
-  <div class="container"> 
-  <label for="number2">Number 2</label>
-  <input type="number" id="Number2" name="Number2"></div><br><br>
-  
+  <div class="calculator-container">
   <div class="container">
-  <form action="/action_page.php">
-  <label for="result">Your result </label>
-  <input type="number" id="result" name="result"></div><br><br>
+  <label for="number2">Number 2</label>
+  <input type="number" class="form-control" id="Number2" name="Number2"></div><br><br>
   
-
-<input type="button" id="alert" onclick="alert(Write answer)" value="Check">
+  <div class="calculator-container">
+  <div class="container">
+  <label for="result">Your result </label>
+  <input type="number" id="result" class="form-control" name="result"></div><br><br>
+  
+<button class="btn btn-success" disabled id="check" onclick="check()">Check</button>
+    <script src="main.js"> </script>
 
 
 </form> <br><br>
