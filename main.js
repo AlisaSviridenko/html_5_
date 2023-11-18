@@ -5,9 +5,9 @@ function check {
 	let result=undefined;
 	switch (action){
 	case "add" result=Number (1)+Number (2); break
-	case "add" result=Number (1)-Number (2); break
-	case "add" result=Number (1)*Number (2); break
-	case "add" result=Number (1)/Number (2); break
+	case "substrate" result=Number (1)-Number (2); break
+	case "multiple" result=Number (1)*Number (2); break
+	case "divide" result=Number (1)/Number (2); break
 	default: result= Choose action";
 	}
 	let userAnswer=document.getElementById("result").value;
