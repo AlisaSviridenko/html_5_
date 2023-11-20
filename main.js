@@ -17,8 +17,8 @@ function check (){
     let action=document.getElementById("action").value;
     let a=document.getElementById("input1").value;
     let b=document.getElementById("input2").value;
-
-    document.getElementById("result").setAttribute("placeholder",a)
+)
+    document.getElementById("result".setAttribute("placeholder",a)
 
     let rightAnswer=undefined;
     switch (action) {
@@ -32,8 +32,10 @@ function check (){
     let userAnswer=document.getElementById("result").value;
     
     if(userAnswer==rightAnswer) {
-        alert("OK")
+        // alert("OK")
+         document.getElementById("success").style.display ="block";
     }
+        
     else {
         alert("YOU'RE WRONG");
         document.getElementById("nok").style.display=none;
@@ -41,4 +43,5 @@ function check (){
 
     // document.getElementById("result").value
 }
+
 
