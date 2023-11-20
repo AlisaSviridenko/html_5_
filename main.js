@@ -1,6 +1,6 @@
-let abc=document.getElementById("number1");
+let abc=document.getElementById("input1");
 abc.addEventListener ("change",()=>{
-    document.getElementById("result").setAttribute("placeholder",document.getElementById("number1").value)
+    document.getElementById("result").setAttribute("placeholder",document.getElementById("input1").value)
     
 })
 
@@ -15,8 +15,8 @@ resultInput.addEventListener ("change",()=>{
 function check (){
 
     let action=document.getElementById("action").value;
-    let a=document.getElementById("number1").value;
-    let b=document.getElementById("number2").value;
+    let a=document.getElementById("input1").value;
+    let b=document.getElementById("input2").value;
 
     document.getElementById("result").setAttribute("placeholder",a)
 
@@ -38,5 +38,7 @@ function check (){
         alert("YOU'RE WRONG");
         document.getElementById("nok").style.display=none;
     }
+
+    // document.getElementById("result").value
 }
 
