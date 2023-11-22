@@ -9,46 +9,43 @@
 
 <body style="background-color:BurlyWood;">
 
-<h1>Запис до лікаря онлайн</h1>
+<h1>Make an appointment with a doctor online</h1>
 
-<p>В нижченаведених полях заповніть, будь ласка, ваші дані</p>
+<p>In the fields below please remember your data</p>
 
   <form>
-  <label for="fname">Прізвище:</label>
-  <input type="text" id="fname" name="fname" pattern="[А-ЯЇІҐ][а-яії]{0,30}" title="Введіть українські літери"> <input type="submit" value="Перевірити"><br><br>
+  <label for="fname">Surname</label>
+  <input type="text" id="fname" name="fname" pattern="[А-ЯЇІҐ][а-яії]{0,30}" title="Введіть українські літери"> <input type="submit" value="Check"><br><br>
   
-  <label for="name">Ім'я:</label>
-  <input type="text" id="name" name="name" pattern="[А-ЯЇІҐ][а-яії]{0,30}" title="Введіть українські літери" required> <input type="submit" value="Перевірити"> <br><br>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" pattern="[А-ЯЇІҐ][а-яії]{0,30}" title="Введіть українські літери" required> <input type="submit" value="Check"> <br><br>
   
-  <label for="surname">По батькові:</label>
-  <input type="text" id="surname" name="surname" pattern="[А-ЯЇІҐ][а-яії]{0,30}" title="Введіть українські літери"> <input type="submit" value="Перевірити"> <br><br>
-  
-  <label for="date">Дата народження:</label>
+  <label for="date">Date of birth:</label>
   <input type="date" id="date" name="date"><br><br>
   
-  <label for="email">Введіть ваш email:</label>
+  <label for="email">Enter your email:</label>
   <input type="email" id="email" name="email"><br><br>
   
-  <label for="phone">Введіть ваш номер телефону:</label>
-  <input type="phone" id="phone" name="phone" pattern="[\+][0-9]{13}" title="Введіть номер у форматі +"> <input type="submit" value="Перевірити"><br><br>
+  <label for="phone">Enter your phone number:</label>
+  <input type="phone" id="phone" name="phone" pattern="[\+][0-9]{13}" title="Enter number in format +"> <input type="submit" value="Check"><br><br>
   
   <form>
-  <label for="city">Оберіть місто:</label>
+  <label for="city">Select city</label>
   <select id="city" name="city">
-    <option value="city">Одеса</option>
-    <option value="city">Київ</option>
-    <option value="city" selected>Дніпро</option>
-    <option value="city">Львів</option>
+    <option value="city">Odessa</option>
+    <option value="city">Kyiv</option>
+    <option value="city" selected>Dnipro</option>
+    <option value="city">Lviv</option>
   </select>
 </form>
 
   
-  <h4>Надаю згоду на обробку моїх персональних даних</h4>
+  <h4>I grant you permission to process my personal data.</h4>
 
-<input type="button" onclick="alert('Ваш запит надіслано')" value="Погоджуюсь!">
+<input type="button" onclick="alert('Your request has been sent')" value="I'll wait!">
 <span style='font-size:100px;'>&#128076;</span>
 
 </form> <br><br>
-<button> <a href="https://alisasviridenko.github.io/html_5_/"> Вернуться на главную страницу</b></a>
+<button> <a href="https://alisasviridenko.github.io/html_5_/"> Go back to main page </b></a>
 </body>
 </html>
