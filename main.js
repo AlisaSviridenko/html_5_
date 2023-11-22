@@ -32,7 +32,7 @@ function check (){
     let userAnswer=document.getElementById("result").value;
     
     if(userAnswer==rightAnswer) {
-        // alert("OK")
+   alert("OK")
          document.getElementById("success").style.display ="block";
     }
         
@@ -41,7 +41,7 @@ function check (){
         document.getElementById("nok").style.display=none;
     }
 
-    // document.getElementById("result").value
+document.getElementById("result").value
 }
 
 
