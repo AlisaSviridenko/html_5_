@@ -31,7 +31,7 @@ function check (){
     let userAnswer=document.getElementById("result").value;
     
     if (Math.abs(userAnswer-rightAnswer)< 0.01) {
-        alert("OK")
+        alert("YOU ARE RIGHT")
     }
     else {
         alert("YOU'RE WRONG");
