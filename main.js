@@ -30,7 +30,7 @@ function check (){
     }    
     let userAnswer=document.getElementById("result").value;
     
-    if(userAnswer==rightAnswer) {
+    if (Math.abs(userAnswer-rightAnswer)== 0.01) {
         alert("OK")
     }
     else {
