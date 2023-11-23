@@ -17,8 +17,8 @@ function check (){
     let action=document.getElementById("action").value;
     let a=document.getElementById("input1").value;
     let b=document.getElementById("input2").value;
-)
-    document.getElementById("result".setAttribute("placeholder",a)
+
+    document.getElementById("result").setAttribute("placeholder",a)
 
     let rightAnswer=undefined;
     switch (action) {
@@ -27,21 +27,16 @@ function check (){
         case "multiply":rightAnswer=Number (a)*Number (b); break;
         case "divide":rightAnswer=Number (a)/Number (b); break;
         default: rightAnswer="CHOOSE ACTION";
-    }
-
+    }    
     let userAnswer=document.getElementById("result").value;
     
     if(userAnswer==rightAnswer) {
-   alert("OK")
-         document.getElementById("success").style.display ="block";
+        alert("OK")
     }
-        
     else {
         alert("YOU'RE WRONG");
         document.getElementById("nok").style.display=none;
     }
 
-document.getElementById("result").value
+    // document.getElementById("result").value
 }
-
-
