@@ -40,3 +40,12 @@ function check (){
 
     // document.getElementById("result").value
 }
+function checkParams() {
+            var number1 = $('#input1').val();
+            var number2 = $('#input2').val();
+            var result = $('#result').val();
+            if(number1 .length != 0 && number2 .length != 0 && result.length != 0 && $('#input1').prop("checked") && ($('#input2').prop("checked") || $('#result').prop("checked")))
+                $('#check').removeAttr('disabled');
+             else 
+                $('#check').attr('disabled', 'disabled');
+        }
