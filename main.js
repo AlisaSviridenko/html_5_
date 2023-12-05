@@ -19,7 +19,16 @@ function check (){
     let b=document.getElementById("input2").value;
 
     document.getElementById("result").setAttribute("placeholder",a)
-
+    
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+    
+let randomInt = document.getElementById("input1").value ; getRandomInt(10, 20);
+let randomInt = document.getElementById("input2").value ; getRandomInt(10, 20);
+    
     let rightAnswer=undefined;
     switch (action) {
         case "add":rightAnswer=Number (a)+Number (b); break;
@@ -37,13 +46,7 @@ function check (){
         alert("YOU'RE WRONG");
         document.getElementById("nok").style.display=none;
     }
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-    
-let randomInt = getRandomInt(10, 20);
+
 
     // document.getElementById("result").value
 }
