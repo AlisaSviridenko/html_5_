@@ -26,8 +26,8 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
     
-let randomInt = document.getElementById("input1").value ; getRandomInt(10, 20);
-let randomInt = document.getElementById("input2").value ; getRandomInt(10, 20);
+let randomInt = document.getElementById("input1").value.getRandomInt(10, 20);
+let randomInt = document.getElementById("input2").value.getRandomInt(10, 20);
     
     let rightAnswer=undefined;
     switch (action) {
