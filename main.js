@@ -1,3 +1,4 @@
+
 let abc=document.getElementById("input1");
 abc.addEventListener ("change",()=>{
     document.getElementById("result").setAttribute("placeholder",document.getElementById("input1").value)
@@ -11,27 +12,24 @@ resultInput.addEventListener ("change",()=>{
         document.getElementById("check").disabled=false
     }
 })
-
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+let a=getRandomInt(1,3);
+let b=getRandomInt(1,3);
+    
+    document.getElementById("input1").value=a;
+    document.getElementById("input2").value=b;
+    
 function check (){
 
     let action=document.getElementById("action").value;
     let a=document.getElementById("input1").value;
     let b=document.getElementById("input2").value;
 
-    document.getElementById("result").setAttribute("placeholder",a)
-    
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-let a=getRandomInt(10,20);
-let b=getRandomInt(10,20);
-    
-    document.getElementById("input1").value=a;
-    document.getElementById("input2").value=b;
-    
-    let rightAnswer=undefined;
+let rightAnswer=undefined;
     switch (action) {
         case "add":rightAnswer=Number (a)+Number (b); break;
         case "subtract":rightAnswer=Number (a)-Number (b); break;
@@ -49,15 +47,6 @@ let b=getRandomInt(10,20);
         document.getElementById("nok").style.display=none;
     }
 
-
-    // document.getElementById("result").value
-}
-// function checkParams() {
-//             var number1 = $('#input1').val();
-//             var number2 = $('#input2').val();
-//             var result = $('#result').val();
-//             if(number1 .length != 0 && number2 .length != 0 && result.length != 0 && $('#input1').prop("checked") && ($('#input2').prop("checked") || $('#result').prop("checked")))
-//                 $('#check').removeAttr('disabled');
-//              else 
-//                 $('#check').attr('disabled', 'disabled');
-//         }
+  
+   
+} 
