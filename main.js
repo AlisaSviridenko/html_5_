@@ -23,8 +23,8 @@ function getRandomInt(min, max) {
 let a=getRandomInt(1,3);
 let b=getRandomInt(1,3);
     
-    first.value=a;
-    second.value=b;
+first.value=a;
+second.value=b;
     
 function check (){
 
