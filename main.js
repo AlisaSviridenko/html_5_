@@ -1,7 +1,8 @@
+let first=document.getElementById("input1");
+let second=document.getElementById("input2");
 
-let abc=document.getElementById("input1");
-abc.addEventListener ("change",()=>{
-    document.getElementById("result").setAttribute("placeholder",document.getElementById("input1").value)
+first.addEventListener ("change",()=>{
+    document.getElementById("result").setAttribute("placeholder",first.value)
     
 })
 
@@ -12,24 +13,27 @@ resultInput.addEventListener ("change",()=>{
         document.getElementById("check").disabled=false
     }
 })
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 let a=getRandomInt(1,3);
 let b=getRandomInt(1,3);
     
-    document.getElementById("input1").value=a;
-    document.getElementById("input2").value=b;
+    first.value=a;
+    second.value=b;
     
 function check (){
 
     let action=document.getElementById("action").value;
-    let a=document.getElementById("input1").value;
-    let b=document.getElementById("input2").value;
+    let a=first.value;
+    let b=second.value;
 
-let rightAnswer=undefined;
+    let rightAnswer=undefined;
+    
     switch (action) {
         case "add":rightAnswer=Number (a)+Number (b); break;
         case "subtract":rightAnswer=Number (a)-Number (b); break;
@@ -46,7 +50,4 @@ let rightAnswer=undefined;
         alert("YOU'RE WRONG");
         document.getElementById("nok").style.display=none;
     }
-
-  
-   
 } 
